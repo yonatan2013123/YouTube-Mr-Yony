@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subscribe to My YouTube</title>
+  <style>
+    /* רקע מגניב עם גרדיאנט אנימציה */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb, #2575fc);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    a.subscribe-button {
+      display: inline-block;
+      background-color: #FF0000;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 20px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgba(255, 0, 0, 0.5);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a.subscribe-button:hover {
+      background-color: #cc0000;
+      box-shadow: 0 12px 20px rgba(204, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <h1>SUBSCRIBE NOW!!</h1>
+  <a
+    class="subscribe-button"
+    href="https://youtube.com/@mryony-c8y?si=-XhgrRKAbjqE0Y97"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Go to YouTube Channel
+  </a>
+</body>
+</html>
